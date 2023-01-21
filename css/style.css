@@ -1,82 +1,177 @@
-/* Universel solidcolor */
-* {
-    margin: 0;
-    padding: 0;
-    bottom: 0;
-    outline: 0;
-    text-decoration: none;
-} 
-/* Elememt solidcolor */
-body {
-    background-color: aqua;
+/* Global CSS */ 
+*{
+  margin: 0;
+  padding: 0;
+  bottom: 0;
+  outline: 0;
+  box-sizing: border-box;
+  font-family:"Titillium Web", sans-serif;;
 }
-  /* Id Selector */
-  #admin-box{
-    background-color: rgb(182, 38, 13);
-    text-align: center;
-    width: 50%;
-    margin: 10% auto;
-    padding: 20px;
-  }
-  /* Class Selector */
-  .heading {
-    text-transform: uppercase;
-    font-size: 35px;
-    line-height: 35px;
-    font-family: "Courier New", Courier, monospace;
-    margin-bottom: 30px;
-  }
- 
+.btn{
+  width: 200px;
+  padding: 10px;
+  font-size: 15px;
+  font-weight: 400;
+  color: #fff;
+  border-radius: 5px;
+}
+section{
+  padding: 75px 0px;
+  text-align: center;
+}
+p{
+  font-size: 17px;
+  line-height: 17px;
+  font-weight: 300;
+}
+.heading{
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 600;
+  letter-spacing: 1.2px;
+}
+.sub-heading{
+  text-transform: uppercase;
+  font-size: 25px;
+  line-height: 25px;
+  font-weight: 600;
+  margin: 10px 0px;
+}
+.underline{
+  border-top: 5px solid rgba(0,0,0,0.3);
+  width: 7%;
+  margin: 10px auto;
+}
+.writing-part{
+  margin-bottom: 50px;
+}
+.box{
+  padding: 0px 25px;
+}
+/* Layout */
+.container{
+  width: 90%;
+  margin: auto;
+}
+.row{
+  width: 100%;
+  float: left;
+}
+[class*="col"] {
+ float: left;  
+}
+.col-1 {
+  width: 8.33%;
+}
+.col-2 {
+  width: 16.66%;
+}
+.col-3 {
+  width: 25%;
+}
+.col-4 {
+  width: 33.33%;
+}
+.col-5 {
+  width: 41.66%;
+}
+.col-6 {
+  width: 50%;
+}
+.col-7 {
+  width: 58.33%;
+}
+.col-8 {
+  width: 66.66%;
+}
+.col-9 {
+  width: 75%;
+}
+.col-10 {
+  width: 83.33%;
+}
+.col-11 {
+  width: 91.66%;
+}
+.col-12 {
+  width: 100%;
+}
+/* header part */
+header {
+  background-color: #87509c;
+color: #fff;
+}
+nav{
+ padding: 10px 0px;
+}
+.menu-part{
+  
+}
+.menu-part ul{
+text-align: end;
+padding: 7px 0px;
+}
+.menu-part li{
+display: inline-block; 
+padding: 5px 10px;
+margin: 0px 5px;
+}
+.menu-part li:hover{
+  background-color: rgba(0, 0, 0, 0.26);
+border-radius: 5px;
+}
+.menu-part li a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+.hero-part{
+  text-align: center;
+ padding: 150px 100px;
+}
+.hero-part h1{
+font-size: 50px;
+line-height: 50px;
+font-weight: 700;
+}
+.hero-part button{
+  background-color: #eb7d4b; 
+}
+/* Service section */
+#service{
+background-color: #17c2a4;
+color: #fff;
+}
+/* team section  */
+#team{
+background-color: #e7f1f8;
+color: #3c4761;
+}
+#team .box img{
+  height: 150px;
+}
+.team-icons{
+margin-top: 20px;
+}
+.team-icons i{
+  font-size: 20px;
+  width: 45px;
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 50%;
+  margin: 0px 5px;
+}
+/* skill section */
+#skill{
+background-color: #ffffff;
+color: #3c4761;
+}
+#portfolio{
+background-color: #eb7d4b;
+}
+/* footer part */
+footer{
+  background-color: #344b8e; 
+}
 
-
-  /* Grouping Selector */
-input,label {
-    display: block;
-    width: 80%;
-    margin: auto;
-}
-label {
-    font-size: 20px;
-    line-height: 0ch20px;
-    margin: 10px auto;
-    font-family:"Arial Narrow', Arial, sans-serif";
-    font-weight: 600;
-}
-input {
-    padding: 10px;
-    background-color: transparent;
-    border: 2px solid black;
-    color: black;
-    font-size: 17px;
-}
- /* Psudo Element Selector */
- input::placeholder{
-    color: black;
-    font-size: 17px;
- }
- /* Attribute Selector */
- input[type="submit"] {
-    width: 50%;
-    margin: 20px auto;
-text-transform: capitalize;
-transition: ease-in 0.5s;
- }
- /* Psudo class selector */
- input[type="submit"]:hover {
-    background-color: rgb(243, 14, 14);
-    color: black;
- }
- p{
-    font-size: 20px;
-    text-transform: lowercase;
-font-family: "Gill Sans","Gill Sans MT",Calibri, "Trebuchet MS";
- }
- .pg {
-    text-transform: uppercase;
- }
-
-  /* Decending Selector */
-   p a{
-    text-transform: capitalize;
-    color: blue;
-   }
